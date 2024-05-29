@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Based Audio Latency Test</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+        <!-- INTRO AND INSTRUCTIONS SECTION -->
+      <section>
+        <h1>Test Latency of Your Audio Equipment</h1>
+        <ol>
+          <li>Accept permissions for accessing microphone.</li>
+          <li>Press Start Test button</li>
+          <li>After 5 beeps, the test will complete</li>
+          <li>The latency score will then show on the screen.</li>
+          <li>Click Retry button to try again</li>
+        </ol>
+      </section>
+      <hr />
+      <!-- CONTROLS SECTION -->
+      <section id="controls">
+        <h2>Controls</h2>
+        <div>
+            <button id="startBtn">Start Detection</button>
+            <button id="retryBtn" style="display: none; margin-top: 1.6rem">Retry</button>
+        </div>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+    </section>
+    <hr />
+    <!-- RESULT SECTION -->
+    <section style="display: none;" id="resultSection">
+        <h3>Latency Evaluation</h3>
+        <p id="result"></p>
+        <ul id="measurementList"></ul>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

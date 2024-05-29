@@ -1,0 +1,18 @@
+h1 {
+    text-decoration: underline;
+}
+
+audio {
+    margin: 1rem 0rem;
+}
+
+#progressContainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+}
+#progressBar {
+    width: 0;
+    height: 30px;
+    background-color: #76c7c0;
+}
